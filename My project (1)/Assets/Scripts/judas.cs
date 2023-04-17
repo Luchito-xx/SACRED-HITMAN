@@ -5,14 +5,15 @@ using UnityEngine;
 public class judas : MonoBehaviour
 {
     //Fuerza con la que se mueve el jugador
-    private float movimientoFuerza = 10f;
-
-    private Rigidbody2D miCuerpoRigido;
+    private float movimientoFuerza = 7f;
+    private float fuerza = 7f;
+    private Rigidbody2D rbd;
 
     // Start is called before the first frame update
     void Start()
     {
-        miCuerpoRigido = GetComponent<Rigidbody2D>();
+        rbd = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
@@ -24,6 +25,14 @@ public class judas : MonoBehaviour
         posicionJug = posicionJug + new Vector2(movementX, 0f) * movimientoFuerza * Time.deltaTime;
 
         transform.position = posicionJug;
+
+
+        //pa que salte
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rbd.AddForce(Vector2.up * fuerza, ForceMode2D.Impulse);
+        }
+
     }
 
     void OnCollisionEnter2D(Collision2D coll)
