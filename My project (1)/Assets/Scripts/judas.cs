@@ -8,8 +8,9 @@ public class judas : MonoBehaviour
     private float movimientoFuerza = 7f;
     private float fuerza = 7f;
     private Rigidbody2D rbd;
-
-    // Start is called before the first frame update
+    private bool saltarSN;
+    
+        // Start is called before the first frame update
     void Start()
     {
         rbd = GetComponent<Rigidbody2D>();
@@ -28,7 +29,7 @@ public class judas : MonoBehaviour
 
 
         //pa que salte
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && saltarSN)
         {
             rbd.AddForce(Vector2.up * fuerza, ForceMode2D.Impulse);
         }
@@ -47,6 +48,24 @@ public class judas : MonoBehaviour
         if (coll.gameObject.tag == "elevator")
         {
             transform.parent = null;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        Piso piso = col.GetComponent < Piso > ();
+        if (piso)
+        {
+            saltarSN = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        Piso piso = col.GetComponent < Piso > ();
+        if (piso)
+        {
+            saltarSN = false;
         }
     }
 
