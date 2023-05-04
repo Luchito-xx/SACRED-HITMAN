@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class InputManager : MonoBehaviour
+{
+    Controles control;
+    private void Awake()
+    {
+        control = new Controles();
+    }
+
+    private void OnEnable()
+    {
+        control.Gameplay.Enable();
+        control.Gameplay.move.performed += movePlayer;
+        control.Gameplay.move.canceled += movePlayer;
+    }
+    
+    private void movePlayer(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        Vector2 MoveDir = obj.ReadValue<Vector2>();
+
+    }
+
+}
