@@ -9,7 +9,7 @@ public class judas : MonoBehaviour
     private float fuerza = 7f;
     private Rigidbody2D rbd;
     private bool saltarSN;
-    
+
         // Start is called before the first frame update
     void Start()
     {
@@ -68,5 +68,70 @@ public class judas : MonoBehaviour
             saltarSN = false;
         }
     }
+
+    //Parametros movimiento celular
+    bool enizquierda = false;
+    bool enderecha = false;
+    bool enSaltar = false;
+    bool puedeSaltar = true;
+
+    
+    public float fuerzaVelocidad;
+    public float fuerzaSalto;
+    public float esperaSaltar;
+
+    public void clickIzquierda()
+    {
+        enizquierda = true;
+    }
+
+    public void releaseIzquierda()
+    {
+        enizquierda = false;
+    }
+
+    public void clickDerecha()
+    {
+        enderecha = true;
+    }
+
+    public void releaseDerecha()
+    {
+        enderecha = false;
+    }
+    public void clickSaltar()
+    {
+        enSaltar = true;
+    }
+
+    private void FixedUpdate()
+    {
+        if (enizquierda)
+        {
+            rbd.AddForce(new Vector2(-fuerzaVelocidad, 0)* Time.deltaTime);
+        }
+
+        if (enderecha)
+        {
+            rbd.AddForce(new Vector2(fuerzaVelocidad, 0)* Time.deltaTime);
+        }
+
+        if (enSaltar && puedeSaltar)
+        {
+            enSaltar = false;
+            rbd.AddForce(new Vector2(0, fuerzaSalto));
+            puedeSaltar = false;
+            Invoke("esperarSaltar", esperaSaltar);
+        }
+
+        void esperarSaltar()
+        {
+            puedeSaltar = true;
+        }
+
+    }
+
+     
+
 
 }
