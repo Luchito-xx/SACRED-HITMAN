@@ -1,5 +1,3 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
-Cmd: compileSnippet
-  insize=1582 file=Assets/DefaultResourcesExtra/Hidden/BlitCopy pass=<Unnamed Pass 0> cachingPP=1 ppOnly=0 stripLineD=0
