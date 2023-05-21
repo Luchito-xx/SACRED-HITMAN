@@ -1,0 +1,327 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.20f1 (577897200b8b) revision 5732503'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'es' Physical Memory: 32716 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/programacion/Programacion6-to/Unity/SACRED-HITMAN/prueba
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+63124
+Successfully changed project path to: D:/programacion/Programacion6-to/Unity/SACRED-HITMAN/prueba
+D:/programacion/Programacion6-to/Unity/SACRED-HITMAN/prueba
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23052] Host "[IP] 192.168.1.109 [Port] 0 [Flags] 2 [Guid] 3994925561 [EditorId] 3994925561 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NCT3V7C) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23052] Host "[IP] 192.168.1.109 [Port] 0 [Flags] 2 [Guid] 3994925561 [EditorId] 3994925561 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NCT3V7C) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 128.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.20f1 (577897200b8b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/programacion/Programacion6-to/Unity/SACRED-HITMAN/prueba/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1e89)
+    Vendor:   NVIDIA
+    VRAM:     5958 MB
+    Driver:   31.0.15.3179
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56820
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011244 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 342 ms
+Refreshing native plugins compatible for Editor in 122.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.191 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1192ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (943ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (130ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (716ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (423ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (122ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (117ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010031 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\programacion\Programacion6-to\Unity\SACRED-HITMAN\prueba\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\programacion\Programacion6-to\Unity\SACRED-HITMAN\prueba\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 125.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.473 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1474ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1176ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (310ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (628ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (126ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (300ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3895 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (129.0 KB). Loaded Objects now: 4356.
+Memory consumption went from 148.4 MB to 148.3 MB.
+Total: 4.007600 ms (FindLiveObjects: 0.367300 ms CreateObjectMapping: 0.111400 ms MarkObjects: 3.396000 ms  DeleteObjects: 0.131600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 83157.032578 seconds.
+  path: Assets/GothicVania Church/Sprites/Enemies/Burning-Ghoul/burning-ghoul3.png
+  artifactKey: Guid(b610a4c36c47d408183676f30f03d10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GothicVania Church/Sprites/Enemies/Burning-Ghoul/burning-ghoul3.png using Guid(b610a4c36c47d408183676f30f03d10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e496a12fedd16975b56eb3a10ca93080') in 0.301613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.173918 seconds.
+  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire3.png
+  artifactKey: Guid(a361d0bfbed22487ca5e27df3288e525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire3.png using Guid(a361d0bfbed22487ca5e27df3288e525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95450b7b42354fd98e23edf13377aa68') in 0.039091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire8.png
+  artifactKey: Guid(ee9497270f8e4451d905d17d90ccad9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire8.png using Guid(ee9497270f8e4451d905d17d90ccad9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed019a920cff97dad47e7fd85db0efb3') in 0.024057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire10.png
+  artifactKey: Guid(45d89eb64f4af4d5c907c7c5ef5b9cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire10.png using Guid(45d89eb64f4af4d5c907c7c5ef5b9cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d10d23c64a118c07ef232d2ddb9ad7') in 0.023581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.408491 seconds.
+  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Idle/wizard-idle-3.png
+  artifactKey: Guid(f7937dea06d104f4c9250daee53b1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Idle/wizard-idle-3.png using Guid(f7937dea06d104f4c9250daee53b1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3610622c86ee7d31c43ac0ac824bfd9') in 0.021834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.709574 seconds.
+  path: Assets/GothicVania Church/Sprites/Enemies/Angel-Idle/angel3.png
+  artifactKey: Guid(66378c6e1c74a4e1598202a298a855b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GothicVania Church/Sprites/Enemies/Angel-Idle/angel3.png using Guid(66378c6e1c74a4e1598202a298a855b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b244a393dfaab62009b1574540edb29e') in 0.033242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GothicVania Church/Sprites/Enemies/Angel-Idle/angel8.png
+  artifactKey: Guid(55483373304e84a7c821d5390de99fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GothicVania Church/Sprites/Enemies/Angel-Idle/angel8.png using Guid(55483373304e84a7c821d5390de99fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e587187f6702fcdec105e95e0d2e30ed') in 0.024951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GothicVania Church/Sprites/Enemies/Angel-Idle/angel6.png
+  artifactKey: Guid(a9334dabab2b04a25af2fd2cee6d9bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GothicVania Church/Sprites/Enemies/Angel-Idle/angel6.png using Guid(a9334dabab2b04a25af2fd2cee6d9bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d6b19794d10378c4343e0805d505a56') in 0.049816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.309987 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-3.png
+  artifactKey: Guid(38ead65714fcf4c52b5b031a59cb4a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/enemy-death/enemy-death-3.png using Guid(38ead65714fcf4c52b5b031a59cb4a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62be6feacd7537a1d00979856f1d5f96') in 0.022444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.365798 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/ghost/ghost-3.png
+  artifactKey: Guid(e1c9c79a6cfb64779be8959eb9a07135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/ghost/ghost-3.png using Guid(e1c9c79a6cfb64779be8959eb9a07135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9faba86ca453d911129dc5dffc6c151') in 0.043193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.989001 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/ghost-halo/ghost-halo-3.png
+  artifactKey: Guid(1d34a9c9c4889499385ae57a53c8ca93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/ghost-halo/ghost-halo-3.png using Guid(1d34a9c9c4889499385ae57a53c8ca93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de213f770f4def014ae6f643db8ec18') in 0.031669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/ghost-halo/ghost-halo-4.png
+  artifactKey: Guid(7ddda95dbd0f54007b8531f7d48c082e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/ghost-halo/ghost-halo-4.png using Guid(7ddda95dbd0f54007b8531f7d48c082e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9252687aa80167a86bf237faf97eb1ec') in 0.017913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.471311 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hell-gato/hell-gato-3.png
+  artifactKey: Guid(a9d1b1763e4e44edc8ae416cba5b8521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hell-gato/hell-gato-3.png using Guid(a9d1b1763e4e44edc8ae416cba5b8521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b33e77463c26e86c02880d8968bf41') in 0.031834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hell-gato/hell-gato-4.png
+  artifactKey: Guid(04e5a1d1ff3dc4c7f81a700a52c1d002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hell-gato/hell-gato-4.png using Guid(04e5a1d1ff3dc4c7f81a700a52c1d002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac980077e83202facb72f772025b5ca') in 0.019135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.798288 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-attack/hero-attack-3.png
+  artifactKey: Guid(789875796cf924ca192c35bf03329fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-attack/hero-attack-3.png using Guid(789875796cf924ca192c35bf03329fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f777e655ff7abf0e80cbb291e5b32ce1') in 0.031134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-attack/hero-attack-5.png
+  artifactKey: Guid(02f0d8bc767d94a5fb1214c5ff1bdac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/hero/hero-attack/hero-attack-5.png using Guid(02f0d8bc767d94a5fb1214c5ff1bdac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '228850ab98d6e8aacae354f9ac7ac5ea') in 0.020627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.447663 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton/skeleton-3.png
+  artifactKey: Guid(8c88c4f4340b14d1bb3506e2d2dc27cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton/skeleton-3.png using Guid(8c88c4f4340b14d1bb3506e2d2dc27cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4539572d23b5f225a63a81b8c3391141') in 0.079292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton/skeleton-6.png
+  artifactKey: Guid(fc69ca891045b4c4fa63ad8e8adcb0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton/skeleton-6.png using Guid(fc69ca891045b4c4fa63ad8e8adcb0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb32cade5c092bad515b9b820b4f4f4') in 0.026984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton/skeleton-5.png
+  artifactKey: Guid(2d54e9cca4323409ca3a67d12ae4bd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton/skeleton-5.png using Guid(2d54e9cca4323409ca3a67d12ae4bd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f394074ad02e6b3aa8a8b6ed4469ca87') in 0.019076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.408017 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-clothed/skeleton-clothed-3.png
+  artifactKey: Guid(9fb83bc13a73444cd84409f9632bf64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-clothed/skeleton-clothed-3.png using Guid(9fb83bc13a73444cd84409f9632bf64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e5345b2c019b253381774747c468297') in 0.034163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-clothed/skeleton-clothed-4.png
+  artifactKey: Guid(c7d83ea6e359a4ee9943372cba4542d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-clothed/skeleton-clothed-4.png using Guid(c7d83ea6e359a4ee9943372cba4542d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594b6648e14deb8c14bc1b5c6c3480e9') in 0.026913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-clothed/skeleton-clothed-7.png
+  artifactKey: Guid(a56bbfeb88ec440b5bc29a32f5368038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-clothed/skeleton-clothed-7.png using Guid(a56bbfeb88ec440b5bc29a32f5368038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a3e7004bd1d5045c95c642eaa17da44') in 0.026281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.637488 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-rise-clothed/skeleton-rise-clothed-3.png
+  artifactKey: Guid(15e89fc30d0344bd08e0f0150acc0784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-rise-clothed/skeleton-rise-clothed-3.png using Guid(15e89fc30d0344bd08e0f0150acc0784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52098b614ef1139b60a04526057af0fa') in 0.049317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-rise-clothed/skeleton-rise-clothed-5.png
+  artifactKey: Guid(6d4734b50e97f44faac533f157541747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-rise-clothed/skeleton-rise-clothed-5.png using Guid(6d4734b50e97f44faac533f157541747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c7ceda9acea2b588fbcb5c0a22db28') in 0.038032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.526657 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-rise/skeleton-rise-3.png
+  artifactKey: Guid(2a93de60bc0ba4f51b49736acd956d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-rise/skeleton-rise-3.png using Guid(2a93de60bc0ba4f51b49736acd956d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40e2a8cc3b31e8abbf745154eb7337c') in 0.186690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-rise/skeleton-rise-6.png
+  artifactKey: Guid(4bd0e5e12ce7c4688b44071df7db9a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gothicvania Cemetery Artwork/Sprites/skeleton-rise/skeleton-rise-6.png using Guid(4bd0e5e12ce7c4688b44071df7db9a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64ff5be017a5ee895a5bb746306893b') in 0.021425 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
