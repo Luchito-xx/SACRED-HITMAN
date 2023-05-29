@@ -78,4 +78,66 @@ public class Bandit : MonoBehaviour {
         else
             m_animator.SetInteger("AnimState", 0);
     }
+
+    //Parametros movimiento celular
+    bool enizquierda = false;
+    bool enderecha = false;
+    bool enSaltar = false;
+    bool puedeSaltar = true;
+
+    
+    public float fuerzaVelocidad;
+    public float fuerzaSalto;
+    public float esperaSaltar;
+
+    public void clickIzquierda()
+    {
+        enizquierda = true;
+    }
+
+    public void releaseIzquierda()
+    {
+        enizquierda = false;
+    }
+
+    public void clickDerecha()
+    {
+        enderecha = true;
+    }
+
+    public void releaseDerecha()
+    {
+        enderecha = false;
+    }
+    public void clickSaltar()
+    {
+        enSaltar = true;
+    }
+
+    private void FixedUpdate()
+    {
+        if (enizquierda)
+        {
+            m_body2d.AddForce(new Vector2(-fuerzaVelocidad, 0)* Time.deltaTime);
+        }
+
+        if (enderecha)
+        {
+            m_body2d.AddForce(new Vector2(fuerzaVelocidad, 0)* Time.deltaTime);
+        }
+
+        if (enSaltar && puedeSaltar)
+        {
+            enSaltar = false;
+            m_body2d.AddForce(new Vector2(0, fuerzaSalto));
+            puedeSaltar = false;
+            esperarSaltar();
+        }
+
+        void esperarSaltar()
+        {
+            puedeSaltar = true;
+        }
+
+    }
 }
