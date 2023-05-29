@@ -15,7 +15,7 @@ C:/Users/f.robledo/Desktop/SACRED-HITMAN/prueba
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51949
+53788
 Successfully changed project path to: C:/Users/f.robledo/Desktop/SACRED-HITMAN/prueba
 C:/Users/f.robledo/Desktop/SACRED-HITMAN/prueba
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/f.robledo/Desktop/SACRED-HITMAN/prueba
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12904] Host "[IP] 192.168.42.69 [Port] 0 [Flags] 2 [Guid] 3726165953 [EditorId] 3726165953 [Version] 1048832 [Id] WindowsEditor(7,LAB2I2PC4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11104] Host "[IP] 192.168.42.69 [Port] 0 [Flags] 2 [Guid] 2574777540 [EditorId] 2574777540 [Version] 1048832 [Id] WindowsEditor(7,LAB2I2PC4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12904] Host "[IP] 192.168.42.69 [Port] 0 [Flags] 2 [Guid] 3726165953 [EditorId] 3726165953 [Version] 1048832 [Id] WindowsEditor(7,LAB2I2PC4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11104] Host "[IP] 192.168.42.69 [Port] 0 [Flags] 2 [Guid] 2574777540 [EditorId] 2574777540 [Version] 1048832 [Id] WindowsEditor(7,LAB2I2PC4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 126.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 158.91 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.20f1 (577897200b8b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
@@ -67,52 +67,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.008461 seconds.
+Registered in 0.014802 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 354 ms
+Android Extension - Scanning For ADB Devices 338 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 119.11 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 123.58 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.155 seconds
+- Completed reload, in  1.253 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1155ms)
-		BeginReloadAssembly (100ms)
+	ReloadAssembly (1253ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (938ms)
-			LoadAssemblies (99ms)
+		EndReloadAssembly (1011ms)
+			LoadAssemblies (105ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (128ms)
+			SetupTypeCache (154ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (717ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (736ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (438ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (119ms)
+				InitializePlatformSupportModulesInManaged (435ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (124ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (110ms)
-				ProcessInitializeOnLoadMethodAttributes (49ms)
+				ProcessInitializeOnLoadAttributes (112ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007310 seconds.
+Registered in 0.008806 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\f.robledo\Desktop\SACRED-HITMAN\prueba\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\f.robledo\Desktop\SACRED-HITMAN\prueba\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -120,46 +120,46 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 122.69 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 118.45 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.414 seconds
+- Completed reload, in  1.432 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1415ms)
-		BeginReloadAssembly (141ms)
+	ReloadAssembly (1433ms)
+		BeginReloadAssembly (144ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1146ms)
-			LoadAssemblies (117ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1153ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (286ms)
+			SetupTypeCache (276ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (612ms)
+			SetupLoadedEditorAssemblies (631ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (24ms)
+				InitializePlatformSupportModulesInManaged (26ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (123ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (299ms)
-				ProcessInitializeOnLoadMethodAttributes (49ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (119ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (308ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.26 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 48 unused Assets / (128.9 KB). Loaded Objects now: 4357.
-Memory consumption went from 148.3 MB to 148.2 MB.
-Total: 4.315500 ms (FindLiveObjects: 0.407800 ms CreateObjectMapping: 0.125400 ms MarkObjects: 3.661400 ms  DeleteObjects: 0.120000 ms)
+Unloading 3899 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (129.0 KB). Loaded Objects now: 4360.
+Memory consumption went from 148.4 MB to 148.3 MB.
+Total: 4.254500 ms (FindLiveObjects: 0.399000 ms CreateObjectMapping: 0.440900 ms MarkObjects: 3.308000 ms  DeleteObjects: 0.105000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -171,241 +171,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 5203.336289 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/fireball/_0001_Layer-2.png
-  artifactKey: Guid(8fabfc4bfe785459ca6dccb4e3b09bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/fireball/_0001_Layer-2.png using Guid(8fabfc4bfe785459ca6dccb4e3b09bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b50f3c64b32363eb6fbb86fccadc222') in 0.118051 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.820247 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/lava/_0001_Layer-2.png
-  artifactKey: Guid(d7bc4e16b28d34d808d751ecbfdd250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/lava/_0001_Layer-2.png using Guid(d7bc4e16b28d34d808d751ecbfdd250e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf1575d368d2e08abc39e950fd43a24') in 0.015999 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.514346 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/lava-falls/_0001_Layer-2.png
-  artifactKey: Guid(18946dd497d034db7ae7f08f3cbaf37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/lava-falls/_0001_Layer-2.png using Guid(18946dd497d034db7ae7f08f3cbaf37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b9d7805c0e3a0b4a80fda973cb2c6b') in 0.013269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.533474 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/torch/_0001_Layer-2.png
-  artifactKey: Guid(b71f85e122a124e3f8c2584b40e56ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/torch/_0001_Layer-2.png using Guid(b71f85e122a124e3f8c2584b40e56ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217b42fbb0e3008726aa32f690dd7ad0') in 0.015246 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.643529 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/water/_0001_Layer-2.png
-  artifactKey: Guid(c313f365dbe2e49be95911025ee09a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/water/_0001_Layer-2.png using Guid(c313f365dbe2e49be95911025ee09a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df45eeccd20e24130e626c95ccac6fd') in 0.012879 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/water/_0002_Layer-3.png
-  artifactKey: Guid(cc630678ca276440eaa2e742ac50a012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/water/_0002_Layer-3.png using Guid(cc630678ca276440eaa2e742ac50a012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81d5d6b2009507b459e7be1b6380907') in 0.013950 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.178942 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/waterfalls/_0001_Layer-2.png
-  artifactKey: Guid(6581e3ad030be4081a2c17eeec4f0207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/animated-tiles/waterfalls/_0001_Layer-2.png using Guid(6581e3ad030be4081a2c17eeec4f0207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab6c89f28caa6b0f8dbd716e4164710') in 0.015304 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.331651 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_column.png
-  artifactKey: Guid(a3b45fccbb6364aafb63a5227a96ab59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_column.png using Guid(a3b45fccbb6364aafb63a5227a96ab59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3aac48401f590558b1dabf7899c93db') in 0.021404 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_statue-head.png
-  artifactKey: Guid(cf855888b5f3047498ebaaa37035533b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_statue-head.png using Guid(cf855888b5f3047498ebaaa37035533b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a70a8dec22e7e68d611c2791555c6ce5') in 0.031954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_door.png
-  artifactKey: Guid(ff71ea2cf2b874bd78ca8d1a426f8883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_door.png using Guid(ff71ea2cf2b874bd78ca8d1a426f8883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ee484a974849ef2c4389ec475eebc6') in 0.017502 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_tree-leaves.png
-  artifactKey: Guid(c977b4e6ad8e6495d86d213d76cfac6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_tree-leaves.png using Guid(c977b4e6ad8e6495d86d213d76cfac6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9109288367d8808d5eb6238f973f73') in 0.020946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_rock-stand.png
-  artifactKey: Guid(bab1ea560212248aabcde88c590eeefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_rock-stand.png using Guid(bab1ea560212248aabcde88c590eeefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e56920dbf41c2d738948b1107340dc') in 0.021340 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_plant-right.png
-  artifactKey: Guid(e3df1070c40f2487b818aa16b495620d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/background/background_plant-right.png using Guid(e3df1070c40f2487b818aa16b495620d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cee8918fcc3dce6924512c3dea85ab0') in 0.017903 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.006351 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/Prefabs/AnimatedlavaTile.prefab
-  artifactKey: Guid(3000d1b35cf1a4c77855bd8c52a0a6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/Prefabs/AnimatedlavaTile.prefab using Guid(3000d1b35cf1a4c77855bd8c52a0a6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23ebbe0d7d1a494d640a8533da7c65c') in 0.071836 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/Prefabs/AnimatedWater.prefab
-  artifactKey: Guid(277db30f27df7471d9c1edddd00dced6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/Prefabs/AnimatedWater.prefab using Guid(277db30f27df7471d9c1edddd00dced6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbda6af9a1bf551c887316c1dd25cd39') in 0.024892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.328010 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-bottom-left.png
-  artifactKey: Guid(df37effeb031149fba46c625c75c2767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-bottom-left.png using Guid(df37effeb031149fba46c625c75c2767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf167b788ac35fce67fc07382c0b5f5') in 0.022376 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/ground-left-2.png
-  artifactKey: Guid(8dbe2e7e770284bb3bb25b2d310f291a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/ground-left-2.png using Guid(8dbe2e7e770284bb3bb25b2d310f291a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a689a4c6e043b53fa15e913ef0e612f9') in 0.022836 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-top-2.png
-  artifactKey: Guid(56b0b71fd93f540f2930f74fe6b0b3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-top-2.png using Guid(56b0b71fd93f540f2930f74fe6b0b3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498629970a397c6e5fa7359bafb7351f') in 0.022059 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/floor-big-plants.png
-  artifactKey: Guid(7508a59f335364f6eb33805795480491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/floor-big-plants.png using Guid(7508a59f335364f6eb33805795480491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a56bc02aba25a014d198a9f87eb9d3d') in 0.022874 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/ground-top-1.png
-  artifactKey: Guid(00b8894b0b9dd4f45a09bce516d93129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/ground-top-1.png using Guid(00b8894b0b9dd4f45a09bce516d93129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e756881149b7cad2b409b4fb5d95b6a') in 0.024704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/ground-left-1.png
-  artifactKey: Guid(ebcb0f73835e44d5e9f70188cd1d6973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/ground-left-1.png using Guid(ebcb0f73835e44d5e9f70188cd1d6973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02103e715b1102a3cd36638c5015ae95') in 0.018154 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-top-left.png
-  artifactKey: Guid(4d27f5711364145c98fb4ab91042a886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-top-left.png using Guid(4d27f5711364145c98fb4ab91042a886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47b10844cf22493ced6343a95effa95') in 0.017012 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/ground-bottom-left.png
-  artifactKey: Guid(1f3915e494fe84fcda2376a8d5adec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/ground-bottom-left.png using Guid(1f3915e494fe84fcda2376a8d5adec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dc95a75c9edcb113c9a7ef7a041cde') in 0.018081 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-tile-1.png
-  artifactKey: Guid(540fd866a93b04bd480a971fc84d6c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-tile-1.png using Guid(540fd866a93b04bd480a971fc84d6c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6af26d2a58090a8c53c2062f2fbf70') in 0.018553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-stalactite.png
-  artifactKey: Guid(951e41ff5a8a541c59b983e4291be766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrottoEscape2/GrottoEscape2Artwork/tiles/dirt-stalactite.png using Guid(951e41ff5a8a541c59b983e4291be766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '654a8cf7a8151200d756a96ecfc63041') in 0.019999 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.837104 seconds.
-  path: Assets/GothicVania Church/Environment/bg-3.png
-  artifactKey: Guid(167f44201ce9c4632b387d0a0822f7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Environment/bg-3.png using Guid(167f44201ce9c4632b387d0a0822f7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a56bf405c3204dc1a310bc8b69ed28f') in 0.025277 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/GothicVania Church/Environment/column.png
-  artifactKey: Guid(41d8855c301eb4f37bddd0d3dfac611b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Environment/column.png using Guid(41d8855c301eb4f37bddd0d3dfac611b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30af6d24ed9704e123d6f12d7d756f5') in 0.028698 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/GothicVania Church/Environment/bg-4.png
-  artifactKey: Guid(d8254b0cb964744a0a12cf381c9356e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Environment/bg-4.png using Guid(d8254b0cb964744a0a12cf381c9356e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbc74fa079c4d86dc1761667a3190a44') in 0.019559 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.718209 seconds.
-  path: Assets/GothicVania Church/Sprites/Misc/Enemy-Death/Enemy-Death-3.png
-  artifactKey: Guid(2bcb30bfe42a24c16b493bfee67b8ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Misc/Enemy-Death/Enemy-Death-3.png using Guid(2bcb30bfe42a24c16b493bfee67b8ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d72cf29d03b372f55ba630a69d41201') in 0.019909 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/GothicVania Church/Sprites/Misc/Enemy-Death/Enemy-Death-4.png
-  artifactKey: Guid(30e4f85892c46449cbd4ea836c389c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Misc/Enemy-Death/Enemy-Death-4.png using Guid(30e4f85892c46449cbd4ea836c389c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50b74dc570d4f9ea37053d6dbb65c56') in 0.021226 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/GothicVania Church/Sprites/Misc/Enemy-Death/Enemy-Death-7.png
-  artifactKey: Guid(e4dfb8af17a354fd4a5278f311c19e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Misc/Enemy-Death/Enemy-Death-7.png using Guid(e4dfb8af17a354fd4a5278f311c19e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '589d09af94c715ca1c66e11dc13d8e1a') in 0.020568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.464719 seconds.
-  path: Assets/GothicVania Church/Sprites/Misc/Fireball/fireball3.png
-  artifactKey: Guid(1cbab147f3d6a4298afd5dc425552309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Misc/Fireball/fireball3.png using Guid(1cbab147f3d6a4298afd5dc425552309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950a4a862bad48114e36c93d740d1e37') in 0.021288 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.589184 seconds.
-  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Idle/wizard-idle-3.png
-  artifactKey: Guid(f7937dea06d104f4c9250daee53b1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Idle/wizard-idle-3.png using Guid(f7937dea06d104f4c9250daee53b1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a502eafc8fa5596fb5e5dde0cd2b0675') in 0.022243 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Idle/wizard-idle-5.png
-  artifactKey: Guid(b3e38fb5b83a24c4b93049ebc52a07a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Idle/wizard-idle-5.png using Guid(b3e38fb5b83a24c4b93049ebc52a07a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebafebb97f06214a95c636c75e665c98') in 0.021852 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.328298 seconds.
-  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire3.png
-  artifactKey: Guid(a361d0bfbed22487ca5e27df3288e525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire3.png using Guid(a361d0bfbed22487ca5e27df3288e525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d02034f804024b0ce6cc3a33d7e791') in 0.020964 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire8.png
-  artifactKey: Guid(ee9497270f8e4451d905d17d90ccad9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire8.png using Guid(ee9497270f8e4451d905d17d90ccad9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd4942c058959da4c0f3ef77a077e23') in 0.031297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire10.png
-  artifactKey: Guid(45d89eb64f4af4d5c907c7c5ef5b9cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Enemies/Wizard-Fire/fire10.png using Guid(45d89eb64f4af4d5c907c7c5ef5b9cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b3a87538558d68390a13e4cf7428da') in 0.025340 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.274774 seconds.
-  path: Assets/GothicVania Church/Sprites/Enemies/Burning-Ghoul/burning-ghoul3.png
-  artifactKey: Guid(b610a4c36c47d408183676f30f03d10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Enemies/Burning-Ghoul/burning-ghoul3.png using Guid(b610a4c36c47d408183676f30f03d10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbcdc51c1e7a263e2bf91d23d1dd6463') in 0.021920 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/GothicVania Church/Sprites/Enemies/Burning-Ghoul/burning-ghoul5.png
-  artifactKey: Guid(a338231a359fb437e8b7793dd9c01504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GothicVania Church/Sprites/Enemies/Burning-Ghoul/burning-ghoul5.png using Guid(a338231a359fb437e8b7793dd9c01504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3310b84e08b8f300d2bc5be1469756') in 0.027182 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
