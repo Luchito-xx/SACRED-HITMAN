@@ -15,6 +15,8 @@ public class Fantasma : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    private Animator fant_animator;
+
 
     private void Start()
     {
@@ -25,7 +27,7 @@ public class Fantasma : MonoBehaviour
     private void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, puntosMovimientoFantasma[siguientePunto].position, velocidadFantasma * Time.deltaTime);
-
+        
         if (Vector2.Distance(transform.position, puntosMovimientoFantasma[siguientePunto].position) < distanciaMinima)
         {
             siguientePunto += 1;

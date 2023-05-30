@@ -12,6 +12,8 @@ public class Enemigo : MonoBehaviour
     
     private bool cooldown = true;
 
+    public Collider2D angelCLD;
+
     private void Start()
     {
         animator = GetComponent<Animator>();

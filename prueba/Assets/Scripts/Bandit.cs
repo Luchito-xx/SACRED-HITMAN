@@ -13,6 +13,7 @@ public class Bandit : MonoBehaviour {
     private bool                m_grounded = false;
     private bool                m_combatIdle = false;
     private bool                m_isDead = false;
+    private Collider2D          banditCLD;
 
     void Start () {
         m_animator = GetComponent<Animator>();
@@ -54,9 +55,9 @@ public class Bandit : MonoBehaviour {
         // else if (Input.GetKeyDown("q"))
         //     m_animator.SetTrigger("Hurt");
 
-        else if(Input.GetMouseButtonDown(0)) {
-            m_animator.SetTrigger("Attack");
-        }
+        // else if(Input.GetMouseButtonDown(0)) {
+        //     m_animator.SetTrigger("Attack");
+        // }
 
         else if (Input.GetKeyDown("f"))
             m_combatIdle = !m_combatIdle;
@@ -84,6 +85,8 @@ public class Bandit : MonoBehaviour {
     bool enderecha = false;
     bool enSaltar = false;
     bool puedeSaltar = true;
+    bool pegar = false;
+    bool puedePegar = true;
 
     
     public float fuerzaVelocidad;
@@ -111,7 +114,14 @@ public class Bandit : MonoBehaviour {
     }
     public void clickSaltar()
     {
+        m_animator.SetTrigger("Jump");
         enSaltar = true;
+    }
+
+    public void clickPegar()
+    {
+        pegar = true;
+        m_animator.SetTrigger("Attack");
     }
 
     private void FixedUpdate()
@@ -134,10 +144,29 @@ public class Bandit : MonoBehaviour {
             esperarSaltar();
         }
 
+        if (pegar && puedePegar)
+        {
+            pegar = false;
+        }
+
         void esperarSaltar()
         {
             puedeSaltar = true;
         }
 
     }
+
+    // //conseguir daño
+    // private void getDaño()
+    // {
+    //     if (angelCLD.position == banditCLD.position)
+    //     {
+    //         animDaño();
+    //     }
+    // }
+
+    // private void animDaño()
+    // {
+    //     m_animator.SetTrigger("Hurt");
+    // }
 }
