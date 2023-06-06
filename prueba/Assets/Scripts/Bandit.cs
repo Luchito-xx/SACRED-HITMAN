@@ -10,6 +10,7 @@ public class Bandit : MonoBehaviour {
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
     private Sensor_Bandit       m_groundSensor;
+    private ActivadorSalto      m_activadorSalto;
     private bool                m_grounded = false;
     private bool                m_combatIdle = false;
     private bool                m_isDead = false;
@@ -19,6 +20,7 @@ public class Bandit : MonoBehaviour {
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
+        m_activadorSalto = transform.Find("ActivadorSalto").GetComponent<ActivadorSalto>();
     }
 	
 	void Update () {
@@ -138,20 +140,14 @@ public class Bandit : MonoBehaviour {
 
         if (enSaltar && puedeSaltar)
         {
-            enSaltar = false;
             m_body2d.AddForce(new Vector2(0, fuerzaSalto));
+            enSaltar = false;
             puedeSaltar = false;
-            esperarSaltar();
         }
 
         if (pegar && puedePegar)
         {
             pegar = false;
-        }
-
-        void esperarSaltar()
-        {
-            puedeSaltar = true;
         }
 
     }
@@ -169,4 +165,15 @@ public class Bandit : MonoBehaviour {
     // {
     //     m_animator.SetTrigger("Hurt");
     // }
+
+    public void NoPuedeSaltar()
+    {
+        enSaltar = false;
+        puedeSaltar = true;
+    }
+
+    public void SiPuedeSaltar()
+    {
+        enSaltar = true;
+    }
 }
