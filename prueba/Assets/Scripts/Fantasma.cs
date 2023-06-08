@@ -26,6 +26,7 @@ public class Fantasma : MonoBehaviour
 
     private void Update()
     {
+        // fant_animator.SetTrigger("Idle");
         transform.position = Vector2.MoveTowards(transform.position, puntosMovimientoFantasma[siguientePunto].position, velocidadFantasma * Time.deltaTime);
         
         if (Vector2.Distance(transform.position, puntosMovimientoFantasma[siguientePunto].position) < distanciaMinima)
@@ -43,7 +44,7 @@ public class Fantasma : MonoBehaviour
     {
         if (transform.position.x < puntosMovimientoFantasma[siguientePunto].position.x)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
         } else {
             spriteRenderer.flipX = true;
         }

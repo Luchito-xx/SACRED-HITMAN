@@ -6,6 +6,7 @@ public class Bandit : MonoBehaviour {
     [SerializeField] float      m_speed = 4.0f;
     [SerializeField] float      m_jumpForce = 7.5f;
     [SerializeField] private    Vector2 velocidadRebote;
+    [SerializeField] private float factorGravedad = 2.8f;
 
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
@@ -20,7 +21,7 @@ public class Bandit : MonoBehaviour {
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
-        m_activadorSalto = transform.Find("ActivadorSalto").GetComponent<ActivadorSalto>();
+        // m_activadorSalto = transform.Find("ActivadorSalto").GetComponent<ActivadorSalto>();
     }
 	
 	void Update () {
@@ -54,12 +55,12 @@ public class Bandit : MonoBehaviour {
             m_isDead = !m_isDead;
         }
 
-        // else if (Input.GetKeyDown("q"))
-        //     m_animator.SetTrigger("Hurt");
+        else if (Input.GetKeyDown("q"))
+            m_animator.SetTrigger("Hurt");
 
-        // else if(Input.GetMouseButtonDown(0)) {
-        //     m_animator.SetTrigger("Attack");
-        // }
+        else if(Input.GetMouseButtonDown(0)) {
+            m_animator.SetTrigger("Attack");
+        }
 
         else if (Input.GetKeyDown("f"))
             m_combatIdle = !m_combatIdle;
@@ -82,18 +83,28 @@ public class Bandit : MonoBehaviour {
             m_animator.SetInteger("AnimState", 0);
     }
 
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<Piso>())
+        {
+            PuedeSaltar();
+            m_body2d.gravityScale = 1;
+        }
+    }
+
+
+
     //Parametros movimiento celular
     bool enizquierda = false;
     bool enderecha = false;
-    bool enSaltar = false;
-    bool puedeSaltar = true;
+    bool puedeSaltar = false;
     bool pegar = false;
     bool puedePegar = true;
+    private bool saltar = false;
 
-    
     public float fuerzaVelocidad;
     public float fuerzaSalto;
-    public float esperaSaltar;
 
     public void clickIzquierda()
     {
@@ -116,8 +127,10 @@ public class Bandit : MonoBehaviour {
     }
     public void clickSaltar()
     {
-        m_animator.SetTrigger("Jump");
-        enSaltar = true;
+        if (puedeSaltar) 
+        {
+            saltar = true;
+        }
     }
 
     public void clickPegar()
@@ -138,11 +151,13 @@ public class Bandit : MonoBehaviour {
             m_body2d.AddForce(new Vector2(fuerzaVelocidad, 0)* Time.deltaTime);
         }
 
-        if (enSaltar && puedeSaltar)
+        if (saltar)
         {
-            m_body2d.AddForce(new Vector2(0, fuerzaSalto));
-            enSaltar = false;
+            m_body2d.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
+            m_animator.SetTrigger("Jump");
             puedeSaltar = false;
+            saltar = false;
+            m_body2d.gravityScale = factorGravedad;
         }
 
         if (pegar && puedePegar)
@@ -166,14 +181,8 @@ public class Bandit : MonoBehaviour {
     //     m_animator.SetTrigger("Hurt");
     // }
 
-    public void NoPuedeSaltar()
-    {
-        enSaltar = false;
-        puedeSaltar = true;
-    }
-
-    public void SiPuedeSaltar()
-    {
-        enSaltar = true;
-    }
+        public void PuedeSaltar()
+        {
+            puedeSaltar = true;
+        }
 }
