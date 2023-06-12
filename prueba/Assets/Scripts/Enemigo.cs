@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Enemigo : MonoBehaviour
 {   
@@ -13,6 +14,8 @@ public class Enemigo : MonoBehaviour
     private bool cooldown = true;
 
     public Collider2D angelCLD;
+
+    public AudioSource muerte;
 
     private void Start()
     {
@@ -33,11 +36,12 @@ public class Enemigo : MonoBehaviour
     {
         if (cooldown)
         {
+            muerte.Play();
             animator.SetTrigger("Muerte");
             cooldown = false;
         } if (!cooldown)
         {
-            angelDesactivado.SetActive(false);
+            angelDesactivado.SetActive(true);
         }
         
     }
