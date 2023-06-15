@@ -41,7 +41,7 @@ public class Enemigo : MonoBehaviour
             cooldown = false;
         } if (!cooldown)
         {
-            angelDesactivado.SetActive(true);
+            Destroy(gameObject,1);
         }
         
     }
