@@ -7,6 +7,7 @@ public class Bandit : MonoBehaviour {
     [SerializeField] float      m_jumpForce = 7.5f;
     [SerializeField] private    Vector2 velocidadRebote;
     [SerializeField] private float factorGravedad = 2.8f;
+    [SerializeField] private Transform lava;
 
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
@@ -16,6 +17,8 @@ public class Bandit : MonoBehaviour {
     private bool                m_combatIdle = false;
     private bool                m_isDead = false;
     private Collider2D          banditCLD;
+    public AudioSource          lava_sound;
+
 
     void Start () {
         m_animator = GetComponent<Animator>();
@@ -81,6 +84,14 @@ public class Bandit : MonoBehaviour {
 
         else
             m_animator.SetInteger("AnimState", 0);
+
+        if(CalculaDistancia() < 10f )
+        {
+            if (!lava_sound.isPlaying)
+            {
+                lava_sound.Play();
+            }
+        }
     }
 
 
@@ -185,4 +196,23 @@ public class Bandit : MonoBehaviour {
         {
             puedeSaltar = true;
         }
+
+
+        public float CalculaDistancia()
+            {
+                float distancia = Vector3.Distance(transform.position,lava.position);
+                RegularVolumen(distancia);
+                return distancia;
+            }
+
+        public void RegularVolumen(float distancia)
+        {
+            if (distancia <= 0 )
+            {
+                lava_sound.volume = 1;
+            } else {
+                lava_sound.volume = 1f/distancia;
+            }
+        }
+        
 }
