@@ -8,23 +8,27 @@ public class Bandit : MonoBehaviour {
     [SerializeField] private    Vector2 velocidadRebote;
     [SerializeField] private float factorGravedad = 2.8f;
     [SerializeField] private Transform lava;
+    [SerializeField] private GameObject panelDerrota;
+    
 
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
     private Sensor_Bandit       m_groundSensor;
-    private ActivadorSalto      m_activadorSalto;
+    public GameObject[]         vida; 
     private bool                m_grounded = false;
     private bool                m_combatIdle = false;
     private bool                m_isDead = false;
     private Collider2D          banditCLD;
     public AudioSource          lava_sound;
+    private int                 vidas = 3;
+    private bool                muerte = false;
+    
 
 
     void Start () {
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
-        // m_activadorSalto = transform.Find("ActivadorSalto").GetComponent<ActivadorSalto>();
     }
 	
 	void Update () {
@@ -102,6 +106,12 @@ public class Bandit : MonoBehaviour {
             PuedeSaltar();
             m_body2d.gravityScale = 1;
         }
+
+        if (collision.gameObject.CompareTag("Enemigo"))
+        {
+            PerderVida();
+        }
+
     }
 
 
@@ -178,20 +188,6 @@ public class Bandit : MonoBehaviour {
 
     }
 
-    // //conseguir daño
-    // private void getDaño()
-    // {
-    //     if (angelCLD.position == banditCLD.position)
-    //     {
-    //         animDaño();
-    //     }
-    // }
-
-    // private void animDaño()
-    // {
-    //     m_animator.SetTrigger("Hurt");
-    // }
-
         public void PuedeSaltar()
         {
             puedeSaltar = true;
@@ -214,5 +210,32 @@ public class Bandit : MonoBehaviour {
                 lava_sound.volume = 1f/distancia;
             }
         }
+
+        public void DesactivarVida(int indice)
+        {
+            vida[indice].SetActive(false);
+        }
+
+        public void ActivarVidas(int indice)
+        {
+            vida[indice].SetActive(true);
+        }
+
+        public void PerderVida()
+        {
+            vidas -= 1;
+            DesactivarVida(vidas);
+            Debug.Log(vidas);
+            if (vidas <= 0)
+            {
+                muerte = true;
+            }
+            if(muerte)
+            {
+                panelDerrota.SetActive(true);
+                Time.timeScale = 0f;
+            }
+        }
         
+
 }

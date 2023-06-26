@@ -11,9 +11,6 @@ public class CombateCaC : MonoBehaviour
 
     [SerializeField] private float dañoGolpe;
 
-    [SerializeField] private float vida;
-
-
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
