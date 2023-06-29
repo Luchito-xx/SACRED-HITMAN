@@ -2,4 +2,4 @@
 
 Proyecto creado en unity 
 
-Luciano Fernandez y Francisco Robledo
+Luciano Fernandez, Francisco Robledo y Santino Enriz
