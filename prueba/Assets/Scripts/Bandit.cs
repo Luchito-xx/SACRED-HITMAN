@@ -65,10 +65,6 @@ public class Bandit : MonoBehaviour {
         else if (Input.GetKeyDown("q"))
             m_animator.SetTrigger("Hurt");
 
-        else if(Input.GetMouseButtonDown(0)) {
-            m_animator.SetTrigger("Attack");
-        }
-
         else if (Input.GetKeyDown("f"))
             m_combatIdle = !m_combatIdle;
 
