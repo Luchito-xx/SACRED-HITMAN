@@ -7,10 +7,13 @@ public class Bandit : MonoBehaviour {
     [SerializeField] float      m_jumpForce = 7.5f;
     [SerializeField] private    Vector2 velocidadRebote;
     [SerializeField] private float factorGravedad = 2.8f;
-    [SerializeField] private Transform lava;
-    [SerializeField] private GameObject panelDerrota;
+    [SerializeField] private    Transform lava;
+    [SerializeField] private    GameObject panelDerrota;
+    [SerializeField] private    Transform controladorGolpe;
+    [SerializeField] private float radioGolpe;
+    [SerializeField] private float dañoGolpe;
     
-
+    private SpriteRenderer      mySpriteRenderer;
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
     private Sensor_Bandit       m_groundSensor;
@@ -26,6 +29,7 @@ public class Bandit : MonoBehaviour {
 
 
     void Start () {
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
@@ -126,21 +130,26 @@ public class Bandit : MonoBehaviour {
     public void clickIzquierda()
     {
         enizquierda = true;
+        m_animator.SetTrigger("Run");
     }
 
     public void releaseIzquierda()
     {
         enizquierda = false;
+        m_animator.SetTrigger("Idle");
+
     }
 
     public void clickDerecha()
     {
         enderecha = true;
+        m_animator.SetTrigger("Run");
     }
 
     public void releaseDerecha()
     {
         enderecha = false;
+        m_animator.SetTrigger("Idle");
     }
     public void clickSaltar()
     {
@@ -161,11 +170,13 @@ public class Bandit : MonoBehaviour {
         if (enizquierda)
         {
             m_body2d.AddForce(new Vector2(-fuerzaVelocidad, 0)* Time.deltaTime);
+            mySpriteRenderer.flipX = false;
         }
 
         if (enderecha)
         {
             m_body2d.AddForce(new Vector2(fuerzaVelocidad, 0)* Time.deltaTime);
+            mySpriteRenderer.flipX = true;
         }
 
         if (saltar)
@@ -180,58 +191,78 @@ public class Bandit : MonoBehaviour {
         if (pegar && puedePegar)
         {
             pegar = false;
+            Golpe();
         }
 
     }
 
-        public void PuedeSaltar()
+    public void PuedeSaltar()
+    {
+        puedeSaltar = true;
+    }
+
+
+    public float CalculaDistancia()
         {
-            puedeSaltar = true;
+            float distancia = Vector3.Distance(transform.position,lava.position);
+            RegularVolumen(distancia);
+            return distancia;
         }
 
-
-        public float CalculaDistancia()
-            {
-                float distancia = Vector3.Distance(transform.position,lava.position);
-                RegularVolumen(distancia);
-                return distancia;
-            }
-
-        public void RegularVolumen(float distancia)
+    public void RegularVolumen(float distancia)
+    {
+        if (distancia <= 0 )
         {
-            if (distancia <= 0 )
-            {
-                lava_sound.volume = 1;
-            } else {
-                lava_sound.volume = 1f/distancia;
-            }
+            lava_sound.volume = 1;
+        } else {
+            lava_sound.volume = 1f/distancia;
         }
+    }
 
-        public void DesactivarVida(int indice)
-        {
-            vida[indice].SetActive(false);
-        }
+    public void DesactivarVida(int indice)
+    {
+        vida[indice].SetActive(false);
+    }
 
-        public void ActivarVidas(int indice)
-        {
-            vida[indice].SetActive(true);
-        }
+    public void ActivarVidas(int indice)
+    {
+        vida[indice].SetActive(true);
+    }
 
-        public void PerderVida()
+    public void PerderVida()
+    {
+        vidas -= 1;
+        DesactivarVida(vidas);
+        Debug.Log(vidas);
+        if (vidas <= 0)
         {
-            vidas -= 1;
-            DesactivarVida(vidas);
-            Debug.Log(vidas);
-            if (vidas <= 0)
-            {
-                muerte = true;
-            }
-            if(muerte)
-            {
-                panelDerrota.SetActive(true);
-                Time.timeScale = 0f;
-            }
+            muerte = true;
         }
+        if(muerte)
+        {
+            panelDerrota.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+
+    private void Golpe()
+    {
+        Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
         
+        foreach (Collider2D colisionador in objetos)
+        {
+            if (colisionador.CompareTag("Enemigo"))
+            {
+                colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(controladorGolpe.position, radioGolpe);
+    }
+    
 
 }
