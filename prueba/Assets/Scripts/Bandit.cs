@@ -12,6 +12,7 @@ public class Bandit : MonoBehaviour {
     [SerializeField] private    Transform controladorGolpe;
     [SerializeField] private float radioGolpe;
     [SerializeField] private float dañoGolpe;
+    [SerializeField] private    GameObject bandido;
     
     private SpriteRenderer      mySpriteRenderer;
     private Animator            m_animator;
@@ -25,7 +26,6 @@ public class Bandit : MonoBehaviour {
     public AudioSource          lava_sound;
     private int                 vidas = 3;
     private bool                muerte = false;
-    
 
 
     void Start () {
@@ -131,13 +131,13 @@ public class Bandit : MonoBehaviour {
     {
         enizquierda = true;
         m_animator.SetTrigger("Run");
+        
     }
 
     public void releaseIzquierda()
     {
         enizquierda = false;
         m_animator.SetTrigger("Idle");
-
     }
 
     public void clickDerecha()
@@ -264,5 +264,12 @@ public class Bandit : MonoBehaviour {
         Gizmos.DrawWireSphere(controladorGolpe.position, radioGolpe);
     }
     
-
+    public void Poder() 
+    {
+        
+        if (poder)
+        {
+            bandido.transform.localScale = new Vector3(5.0f, 1.0f, 5.0f);
+        }
+    }
 }
