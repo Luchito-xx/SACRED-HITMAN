@@ -264,12 +264,5 @@ public class Bandit : MonoBehaviour {
         Gizmos.DrawWireSphere(controladorGolpe.position, radioGolpe);
     }
     
-    public void Poder() 
-    {
-        
-        if (poder)
-        {
-            bandido.transform.localScale = new Vector3(5.0f, 1.0f, 5.0f);
-        }
-    }
+
 }
