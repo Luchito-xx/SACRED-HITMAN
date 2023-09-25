@@ -13,6 +13,7 @@ public class Bandit : MonoBehaviour {
     [SerializeField] private float radioGolpe;
     [SerializeField] private float dañoGolpe;
     [SerializeField] private    GameObject bandido;
+    public GameObject[] espadas;
     
     private SpriteRenderer      mySpriteRenderer;
     private Animator            m_animator;
@@ -122,6 +123,7 @@ public class Bandit : MonoBehaviour {
     bool puedeSaltar = false;
     bool pegar = false;
     bool puedePegar = true;
+    bool puedepoder = true;
     private bool saltar = false;
 
     public float fuerzaVelocidad;
@@ -163,6 +165,14 @@ public class Bandit : MonoBehaviour {
     {
         pegar = true;
         m_animator.SetTrigger("Attack");
+    }
+
+    public void ClickPoder()
+    {
+        if (puedepoder)
+        {
+            //PoderActivo();
+        }
     }
 
     private void FixedUpdate()
@@ -264,5 +274,9 @@ public class Bandit : MonoBehaviour {
         Gizmos.DrawWireSphere(controladorGolpe.position, radioGolpe);
     }
     
+    /*public void PoderActivo()
+    {
+        espadas = new Vector2(transform.position.x, -0.14f);
+    }*/
 
 }
