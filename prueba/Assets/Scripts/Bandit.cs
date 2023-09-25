@@ -13,13 +13,13 @@ public class Bandit : MonoBehaviour {
     [SerializeField] private float radioGolpe;
     [SerializeField] private float dañoGolpe;
     [SerializeField] private    GameObject bandido;
-    public GameObject[] espadas;
-    
+
     private SpriteRenderer      mySpriteRenderer;
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
     private Sensor_Bandit       m_groundSensor;
-    public GameObject[]         vida; 
+    public GameObject[]         vida;
+    public GameObject[] espadas; 
     private bool                m_grounded = false;
     private bool                m_combatIdle = false;
     private bool                m_isDead = false;
@@ -27,13 +27,18 @@ public class Bandit : MonoBehaviour {
     public AudioSource          lava_sound;
     private int                 vidas = 3;
     private bool                muerte = false;
+    private bool activopoder = false;
 
+    public void ActivarPoder(){
+        activopoder=true;
+    }
 
     void Start () {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
+    
     }
 	
 	void Update () {
@@ -167,14 +172,6 @@ public class Bandit : MonoBehaviour {
         m_animator.SetTrigger("Attack");
     }
 
-    public void ClickPoder()
-    {
-        if (puedepoder)
-        {
-            //PoderActivo();
-        }
-    }
-
     private void FixedUpdate()
     {
         if (enizquierda)
@@ -274,9 +271,24 @@ public class Bandit : MonoBehaviour {
         Gizmos.DrawWireSphere(controladorGolpe.position, radioGolpe);
     }
     
-    /*public void PoderActivo()
+
+
+    public void ActivadorPoder()
     {
-        espadas = new Vector2(transform.position.x, -0.14f);
-    }*/
+        
+        if (activopoder)
+        {
+            PoderActivo();
+        }
+    }
+    
+    
+    public void PoderActivo()
+    {
+        foreach(GameObject elemento in espadas)
+        {
+            elemento.transform.position = new Vector2(elemento.transform.position.x, -0.9f);
+        }
+    }
 
 }

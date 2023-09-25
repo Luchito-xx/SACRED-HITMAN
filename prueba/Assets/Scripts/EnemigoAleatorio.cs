@@ -14,6 +14,15 @@ public class EnemigoAleatorio : MonoBehaviour
     [SerializeField] private float distancia;
 
     [SerializeField] private LayerMask queEsSuelo;
+
+
+    [SerializeField] private float vida;
+
+    private Animator animator;
+    
+    private bool cooldown = true;
+
+    public AudioSource muerte;
     
 
     void Start()
@@ -23,6 +32,7 @@ public class EnemigoAleatorio : MonoBehaviour
         DatosAleatorio();
         InvokeRepeating("Girar", 1f, tiempo);
         InvokeRepeating("VelocidadAleatoria", 1f, 4f);
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -52,5 +62,28 @@ public class EnemigoAleatorio : MonoBehaviour
     private void VelocidadAleatoria()
     {
         velocidadMovimiento = Random.Range(3f, 8f);
+    }
+
+    private void TomarDaño(float daño)
+    {
+        vida -= daño;
+
+        if(vida <= 0)
+        {
+            MuerteEnemigoFuego();
+        }
+    }
+
+    private void MuerteEnemigoFuego()
+    {
+        if (cooldown)
+        {
+            muerte.Play();
+            animator.SetTrigger("Muerte");
+            cooldown = false;
+        } if (!cooldown)
+        {
+            Destroy(gameObject,1);
+        }
     }
 }
