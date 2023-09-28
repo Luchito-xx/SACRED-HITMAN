@@ -5,6 +5,7 @@ using UnityEngine;
 public class pocionPoder : MonoBehaviour
 {
     [SerializeField] private    GameObject  pocionpoder;
+    //private bool cooldown = true;
 
   
     void OnTriggerEnter2D (Collider2D col)
@@ -15,4 +16,13 @@ public class pocionPoder : MonoBehaviour
             pocionpoder.SetActive(false);
         }
     }
+
+    /*private void FixedUpdate()
+    {
+        Bandit bandit = gameObject.GetComponent<Bandit>();
+        if (!cooldown){
+            bandit.SetearPoder();
+        }
+    }*/
 }
+

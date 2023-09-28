@@ -4,26 +4,17 @@ using UnityEngine;
 
 public class EnemigoAleatorio : MonoBehaviour
 {
-    
     private Rigidbody2D rb2D;
     private SpriteRenderer mySpriteRenderer;
     private float tiempo;
 
     [SerializeField] private float velocidadMovimiento;
-
     [SerializeField] private float distancia;
-
     [SerializeField] private LayerMask queEsSuelo;
-
-
-    [SerializeField] private float vida;
-
     private Animator animator;
-    
-    private bool cooldown = true;
 
-    public AudioSource muerte;
-    
+    private static int enemigosGenerados = 0;
+    private static int maxEnemigos = 2;
 
     void Start()
     {
@@ -33,6 +24,17 @@ public class EnemigoAleatorio : MonoBehaviour
         InvokeRepeating("Girar", 1f, tiempo);
         InvokeRepeating("VelocidadAleatoria", 1f, 4f);
         animator = GetComponent<Animator>();
+
+        // Verificar si se ha alcanzado el límite de enemigos antes de generar uno nuevo.
+        if (enemigosGenerados < maxEnemigos)
+        {
+            enemigosGenerados++; // Incrementar el contador de enemigos generados.
+        }
+        else
+        {
+            // Si se alcanzó el límite, destruir este objeto.
+            Destroy(gameObject);
+        }
     }
 
     void Update()
@@ -45,7 +47,11 @@ public class EnemigoAleatorio : MonoBehaviour
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
     }
 
-
+    private void OnDestroy()
+    {
+        // Decrementar el contador de enemigos cuando este enemigo es destruido.
+        enemigosGenerados--;
+    }
 
     private void OnDrawGizmosSelected()
     {
@@ -55,35 +61,11 @@ public class EnemigoAleatorio : MonoBehaviour
 
     private void DatosAleatorio()
     {
-        tiempo = Random.Range(3f , 7f);
-            
+        tiempo = Random.Range(6f, 7f);
     }
 
     private void VelocidadAleatoria()
     {
         velocidadMovimiento = Random.Range(3f, 8f);
-    }
-
-    private void TomarDaño(float daño)
-    {
-        vida -= daño;
-
-        if(vida <= 0)
-        {
-            MuerteEnemigoFuego();
-        }
-    }
-
-    private void MuerteEnemigoFuego()
-    {
-        if (cooldown)
-        {
-            muerte.Play();
-            animator.SetTrigger("Muerte");
-            cooldown = false;
-        } if (!cooldown)
-        {
-            Destroy(gameObject,1);
-        }
     }
 }

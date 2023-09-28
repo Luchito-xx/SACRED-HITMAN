@@ -28,10 +28,7 @@ public class Bandit : MonoBehaviour {
     private int                 vidas = 3;
     private bool                muerte = false;
     private bool activopoder = false;
-
-    public void ActivarPoder(){
-        activopoder=true;
-    }
+    private bool volverespada = false;
 
     void Start () {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
@@ -128,7 +125,6 @@ public class Bandit : MonoBehaviour {
     bool puedeSaltar = false;
     bool pegar = false;
     bool puedePegar = true;
-    bool puedepoder = true;
     private bool saltar = false;
 
     public float fuerzaVelocidad;
@@ -201,6 +197,13 @@ public class Bandit : MonoBehaviour {
             Golpe();
         }
 
+        /*if (volverespada)
+        {
+            foreach(GameObject elemento in espadas)
+            {
+                elemento.transform.position = new Vector2(elemento.transform.position.x, -6.81f);
+            }
+        }*/
     }
 
     public void PuedeSaltar()
@@ -283,12 +286,35 @@ public class Bandit : MonoBehaviour {
     }
     
     
+    public void ActivarPoder(){
+        activopoder=true;
+    }
+
     public void PoderActivo()
     {
         foreach(GameObject elemento in espadas)
         {
             elemento.transform.position = new Vector2(elemento.transform.position.x, -0.9f);
         }
+        Invoke("SetearPoder", 2f);
     }
+
+    public void SetearPoder()
+    {
+        StartCoroutine(InvocarPoder());
+    }
+
+    IEnumerator InvocarPoder()
+    {
+        foreach(GameObject elemento in espadas)
+        {
+            for (float i = elemento.transform.position.y; i > -15.81f ; i--)
+            {
+                elemento.transform.position = new Vector2(elemento.transform.position.x, elemento.transform.position.y - 0.5f);
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+    }
+
 
 }
